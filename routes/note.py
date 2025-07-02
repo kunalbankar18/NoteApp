@@ -6,8 +6,10 @@ from config.db import conn
 from schemas.note import noteEntity, notesEntity
 from fastapi.templating import Jinja2Templates
 
+
 note = APIRouter()
 templates=Jinja2Templates(directory='templates')
+
 
 @note.get('/',response_class=HTMLResponse)
 async def home_page(request:Request):
