@@ -1,0 +1,12 @@
+FastAPI
+uvicorn
+pydantic
+pymongo
+python-dotenv
+python-multipart
+jinja2
+
+
+
+
+

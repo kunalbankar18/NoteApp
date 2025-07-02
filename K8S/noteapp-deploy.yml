@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: noteapp
+spec:
+  selector:
+    matchLabels:
+      app: noteapp
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: noteapp
+    spec:
+      containers:
+      - name: noteapp
+        image: docker.io/kunalb23/noteapp:latest
+        resources:
+        ports:
+        - containerPort: 8000
